@@ -1,0 +1,27 @@
+{
+  "name": "qa-challenge",
+  "version": "0.0.1",
+  "description": "Sample repo for improve my QA skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejohnjohn/qa-challenge.git"
+  },
+  "keywords": [
+    "QA",
+    "Quality",
+    "BDD"
+  ],
+  "author": "github.com/thejohnjohn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejohnjohn/qa-challenge/issues"
+  },
+  "homepage": "https://github.com/thejohnjohn/qa-challenge#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.9.1"
+  }
+}
