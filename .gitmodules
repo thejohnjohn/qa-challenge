@@ -1,0 +1,3 @@
+[submodule "qa-frontend-challenge"]
+	path = codacy
+	url = https://github.com/codacy/qa-frontend-challenge.git
