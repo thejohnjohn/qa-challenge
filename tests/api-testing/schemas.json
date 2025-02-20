@@ -1,0 +1,38 @@
+[
+    {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "title": "Post",
+        "type": "object",
+        "properties": {    
+          "userId": {      
+            "description": 
+            "User identifier",     
+            "type": "integer"    
+          },
+          "id": {"type": "integer"},
+          "title": {"type": "string"},
+          "body": {"type": "string"}
+        },
+         "required": ["userId", "id"]
+    },
+    {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Post",
+      "type": "object",
+      "properties": {
+        "postId": {
+          "description": "The unique identifier for a post",
+          "type": "integer"
+        },
+        "id": { "type": "integer" },
+        "name": { "type": "string" },
+        "email": {
+          "description": "Email of the user",
+          "type": "string",
+          "format": "email"
+        },
+        "body": { "type": "string" }
+      },
+      "required": ["postId", "id", "name", "email"]
+    }
+]
