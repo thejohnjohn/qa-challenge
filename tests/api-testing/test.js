@@ -70,7 +70,7 @@ describe(`Testing the Comments route on JSONPlaceholder`, async () => {
 
   it('Tests', async () => {
     .get("https://jsonplaceholder.typicode.com/comments/2")
-        .expectStatus(200)
+        .expectStatus(400)
   });
 });
 
