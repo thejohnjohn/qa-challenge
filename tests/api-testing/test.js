@@ -66,5 +66,11 @@ describe(`Testing the Comments route on JSONPlaceholder`, async () => {
             "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
           }
         );
-  }); 
+  });
+
+  it('Tests', async () => {
+    .get("https://jsonplaceholder.typicode.com/comments/2")
+        .expectStatus(200)
+  });
 });
+
