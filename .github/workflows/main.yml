@@ -5,13 +5,13 @@ on:
     branches:
       - api-testing
     paths:
-      - 'tests/api-testing'
+      - 'tests/api-testing/**'
 
   pull_request:
     branches:
       - main
     paths:
-      - 'tests/api-testing'
+      - 'tests/api-testing/**'
 jobs:
   build:
     runs-on: ubuntu-latest
