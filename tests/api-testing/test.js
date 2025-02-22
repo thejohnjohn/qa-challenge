@@ -70,3 +70,11 @@ describe(`Testing the Comments route on JSONPlaceholder`, async () => {
 
 });
 
+describe(`Testing the Albums route on JSONPlaceholder`, async () => {
+  it(`Test if albums route returns everything OK`, async () => {
+    await spec()
+        .get("https://jsonplaceholder.typicode.com/albums/15")
+        .expectStatus(200)
+  });
+
+});
