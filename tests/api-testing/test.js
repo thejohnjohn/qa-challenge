@@ -36,7 +36,7 @@ describe(`Testing the Comments route on JSONPlaceholder`, async () => {
   it(`Test the return of the 10th item in the posts list and whether it returns with the HTTP status 200 (OK)`, async () => {
     await spec()
         .get("https://jsonplaceholder.typicode.com/comments/2")
-        .expectStatus(200)
+        .expectStatus(400)
         .expectJsonSchema({
           "$schema": "https://json-schema.org/draft/2020-12/schema",
           "title": "Post",
@@ -66,5 +66,15 @@ describe(`Testing the Comments route on JSONPlaceholder`, async () => {
             "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
           }
         );
-  }); 
+  });
+
+});
+
+describe(`Testing the Albums route on JSONPlaceholder`, async () => {
+  it(`Test if albums route returns everything OK`, async () => {
+    await spec()
+        .get("https://jsonplaceholder.typicode.com/albums/15")
+        .expectStatus(200)
+  });
+
 });
